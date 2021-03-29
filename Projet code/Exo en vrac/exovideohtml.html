@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+
+<!--Permet d'indiquer comment le navigateur doit afficher la page sur les différents supports-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <meta http-equiv="X-UA-compatible" content="IE=7">
+<!--référencement naturel de ma page, elle doit etre clair et précise-->
+    <meta name="Les chats" content="Les chats maitres d'internet">
+    <title>j'aime les chats</title>
+</head>
+
+<body>
+
+    <!--exo video-->
+    <iframe width="800" height="444" 
+    src="https://www.youtube.com/embed/MuFryJD2wTo" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+    </iframe>
+
+    <br>
+
+    
+    <a href="HTMLtest.html" title="page suivante"> cliquez ici pour retourner au travail </a>
+
+    <br>
+    <!--exo Formulaires-->
+    <form action="http://bienvu.net/script.php" method="GET" id="formulaire_contact">
+        <p>* Ces zones sont obligatoires</p><br>
+        <fieldset>
+            <legend>Vos coordon&eacute;es</legend>
+            <label for="nom*">Nom* :</label><input type="text" name="nom" id="?" required maxlength="30"><br>
+            <label for="prenom*">Pr&eacute;nom* :</label><input type="text" name="prenom" id="?" required maxlength="30"><br>
+
+            <label for="Sexe*">Sexe* :</label><input type="radio" name="sexe" value="F&eacute;minin" required>F&eacute;minin
+            <input type="radio" name="sexe" value="Masculin" required>Masculin<br>
+
+            <label for="date">Date de naissance* :</label><input type="date" name="ddn" id="date" required><br>
+            <label for="postal">Code postal* :</label><input type="text" name="cd" maxlength="10"><br>
+
+            <label for="adresse"></label>Adresse :</label><input type="text" name="adresse" maxlength="40"><br>
+            <label for="ville">Ville :</label><input type="text" name="ville" maxlength="30"><br>
+
+            <label for="email">Email* :</label><input type="text" name="email" placeholder="dave.loper@afpa.fr" required maxlength="50" id="email">
+        </fieldset>
+
+        <fieldset>
+            <legend>Votre demande</legend>
+            <label for="sujet">Sujet* :</label>
+            <select id="sujet" name="sujet">
+                <option value="choix" aria-required="false">veuillez s&eacute;l&eacute;ctionner un sujet</option>
+                <option value="Mes commandes" aria-required="true">Mes commandes</option>
+                <option value="Question" aria-required="true">Question sur un produit</option>
+                <option value="R&eacute;clamation" aria-required="true">R&eacute;clamation</option>
+                <option value="Autres" aria-required="true">Autres</option>
+            </select>
+
+            <br>
+
+            Votre Question* :<textarea name="question" rows="5" cols="50" required></textarea>
+        </fieldset>
+        <input type="checkbox" name="acceptation" value="accepte" required> * j'accepte le traitement informatique de ce formulaire
+        
+        <br>
+
+        <input type="submit" value="Envoyer" >
+        <input type="reset" value="Annuler">
+       
+
+    </form>
+
+
+</body>
+</html>

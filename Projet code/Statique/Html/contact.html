@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+
+    <!--Permet d'indiquer comment le navigateur doit afficher la page sur les différents supports-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--référencement naturel de ma page, elle doit etre clair et précise-->
+    <meta name="Contact" content="Contact jarditou">
+    <title>Contact</title>
+
+</head>
+
+<body>
+    <header>
+        <!--Balise sémantiques organise et controle son code(header)-->
+        <img src="jarditou_html_zip/images/jarditou_logo.jpg" alt="logo" height="112" title="logo_jarditou">
+
+        <br>
+
+        <p style="color:darkgreen">La qualit&eacute; depuis 70 ans </p>
+
+        <br>
+        <!--balise nav-->
+        <nav>
+            <ul>
+                <li> <a href="index.html" title="Accueil">Accueil</a></li>
+                <li> <a href="tableau.html" title="tableau">Tableau</a></li>
+                <li><a href="contact.html" title="contact">Contact</a></li>
+            </ul>
+        </nav>
+        <br>
+
+        <img src="jarditou_html_zip/images/promotion.jpg" alt="promo" width="1244" title="promotion_jarditou">
+
+        <br>
+
+    </header>
+
+    <h1>Contact</h1>
+
+    <hr>
+    <section>
+        <!--Balise sémantiques organise et controle son code(section)-->
+        <form action="http://bienvu.net/script.php" method="GET" id="formulaire_contact">
+            <p>* Ces zones sont obligatoires</p><br>
+            <fieldset>
+                <legend>Vos coordon&eacute;es</legend>
+                <label for="nom*">Nom* :</label><input type="text" name="nom" id="nom*" required maxlength="30"><br>
+                <label for="prenom*">Pr&eacute;nom* :</label><input type="text" name="prenom" id="prenom*" required maxlength="30"><br>
+
+                <label for="Sexe*">Sexe* :</label>
+                <input type="radio" name="sexe" value="F&eacute;minin" id="Sexe*" required>F&eacute;minin
+                <label for="sexe1"></label>
+                <input type="radio" name="sexe" id="sexe1" value="Masculin" required>Masculin<br>
+
+                <label for="date">Date de naissance* :</label><input type="date" name="ddn" id="date" required><br>
+                <label for="postal">Code postal* :</label><input type="text" id="postal" name="cd" maxlength="10"><br>
+
+                <label for="adresse"></label>Adresse :<input type="text" id="adresse" name="adresse" maxlength="40"><br>
+                <label for="ville">Ville :</label><input type="text" id="ville" name="ville" maxlength="30"><br>
+
+                <label for="email">Email* :</label><input type="text" name="email" placeholder="dave.loper@afpa.fr" required maxlength="50" id="email">
+            </fieldset>
+
+            <fieldset>
+                <legend>Votre demande</legend>
+                <label for="sujet">Sujet* :</label>
+                <select id="sujet" name="sujet" required size="1">
+                    <option value="" selected >veuillez s&eacute;l&eacute;ctionner un sujet</option>
+                    <option value="Mes commandes" >Mes commandes</option>
+                    <option value="Question" >Question sur un produit</option>
+                    <option value="R&eacute;clamation" >R&eacute;clamation</option>
+                    <option value="Autres" >Autres</option>
+                </select>
+
+                <br> Votre Question* :<textarea name="question" rows="5" cols="50" required maxlength="300"></textarea>
+            </fieldset>
+            <input type="checkbox" name="acceptation" value="accepte" required> * j'accepte le traitement informatique de ce formulaire
+
+            <br>
+
+            <input type="submit" value="Envoyer">
+            <input type="reset" value="Annuler">
+        </form>
+    </section>
+
+    <hr>
+
+    <footer>
+        <!--Balise sémantiques organise et controle son code(footer et nav)-->
+        <nav>
+            <ul>
+                <li><a href="?" title="légales">Mention l&eacute;gales</a></li>
+                <li><a href="?" title="Horraires">Horraires</a></li>
+                <li><a href="?" title="Plan du site">Plan du site</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

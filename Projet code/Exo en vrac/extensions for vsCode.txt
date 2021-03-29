@@ -1,0 +1,6 @@
+extensions installé sur VScode : Bracket pair colorizer
+Css peek
+indent-rainbow
+live server
+prettier code formatter
+turbo console log

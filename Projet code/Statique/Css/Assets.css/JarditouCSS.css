@@ -1,0 +1,80 @@
+/*Web responsive*/
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+    .colonne {
+        display: none;
+    }
+    .colonnetab {
+        display: none;
+    }
+    .colonnecon {
+        display: none;
+    }
+    a {
+        display: block;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*Css pour page index jarditou*/
+
+.parent {
+    text-align: left;
+    padding: 20px;
+    background-color: black;
+}
+
+.texte {
+    float: left;
+    text-align: left;
+}
+
+.colonne {
+    float: right;
+    right: 10px;
+    bottom: 100px;
+    width: 300px;
+    height: 530px;
+    background-color: silver;
+}
+
+a {
+    color: white;
+}
+
+body {
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+/*colonne page tableau*/
+
+.colonnetab {
+    float: right;
+    right: 10px;
+    bottom: 100px;
+    width: 300px;
+    height: 660px;
+    background-color: silver;
+}
+
+
+/*colonne contact*/
+
+.colonnecon {
+    float: right;
+    right: 10px;
+    bottom: 100px;
+    width: 300px;
+    height: 550px;
+    background-color: silver;
+}
